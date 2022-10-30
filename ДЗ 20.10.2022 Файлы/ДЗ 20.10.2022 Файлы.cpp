@@ -157,7 +157,7 @@ int main1()
     FILE* f1;
     FILE* f2;
 
-    f1 = fopen("Text to encrypt.txt", "rt");                         // открываем файл для чтения
+    f1 = fopen("Text to encrypt.txt", "rt");                        // открываем файл для чтения
     f2 = fopen("Ciphertext.txt", "wt");                             // открываем файл для записи
 
     if (!f1)                                                        // если f1 невозможно открыть
@@ -181,7 +181,7 @@ int main1()
     while (!feof(f1))                                               // пока не конец файла
     {
         fgets(str, size, f1);                                       // считываем символы в строку из файла "Text to encrypt.txt"
-        //std::cout << str << "\n";                                   // выводим файл в консоль
+        //std::cout << str << "\n";                                 // выводим файл в консоль
         size_t len = strlen(str);                                   // определение размера массива символов
         for (size_t i = 0; i < len; i++)                            // перебираем элементы массива символов str
         {
